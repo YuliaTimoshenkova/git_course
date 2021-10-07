@@ -8,7 +8,7 @@ class Main(Frame):
 
     def build(self):
         self.formula = "0"
-        self.lbl = Label(text=self.formula, font=("Times New Roman", 21, "bold"), bg="#000", foreground="#FFF")
+        self.lbl = Label(text=self.formula, font=("Arial", 21, "bold"), bg="#000", foreground="#FFF")
         self.lbl.place(x=11, y=50)
 
         btns = [
@@ -24,7 +24,7 @@ class Main(Frame):
         for bt in btns:
             com = lambda x=bt: self.logicalc(x)
             Button(text=bt, bg="#FFF",
-                   font=("Times New Roman", 15),
+                   font=("Arial", 15),
                    command=com).place(x=x, y=y,
                                       width=115,
                                       height=79)
