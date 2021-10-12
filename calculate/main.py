@@ -2,6 +2,8 @@ import math
 
 import mysum
 
+import mydif
+
 def main():
 
     while True:
