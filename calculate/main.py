@@ -3,7 +3,7 @@ import math
 import mysum
 
 def main():
-
+    print('Hello, world!')
     while True:
         
         # Выводим сообщение какие действия есть
