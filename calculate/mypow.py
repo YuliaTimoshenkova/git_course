@@ -1,2 +1,2 @@
-def mypow(a,b):
+def mypow(a, b):
     return a ** b
