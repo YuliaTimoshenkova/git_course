@@ -2,10 +2,10 @@ import math
 
 import mysum
 
-def main():
 
+def main():
     while True:
-        
+
         # Выводим сообщение какие действия есть
         print("Выберите действие которое хотите сделать:\n"
               "Сложить: +\n"
@@ -23,26 +23,20 @@ def main():
             break
         # Если action равен +, -, *, /, то
         if action in ('+', '-', '*', '/'):
-            # Присваиваем значение переменной x
             x = float(input("x = "))
-            # Присваиваем значение переменной y
             y = float(input("y = "))
-            # Если action равен + то
             if action == '+':
-                # Выводим сумму x и y
-                print('%.2f + %.2f = %.2f' % (x, y, x+y))
-            # Если action равен - то
+                print('%.2f + %.2f = %.2f' % (x, y, x + y))
             elif action == '-':
-                # Выводим разность x и y
-                print('%.2f - %.2f = %.2f' % (x, y, x-y))
-            # Если action равен * то
+                print('%.2f - %.2f = %.2f' % (x, y, x - y))
             elif action == '*':
-                # Выводим результат умножения x на y
-                print('%.2f * %.2f = %.2f' % (x, y, x*y))
-            # Если action равен / то
+                print('%.2f * %.2f = %.2f' % (x, y, x * y))
             elif action == '/':
-                # Если y не равен нулю то
-                print('%.2f / %.2f = %.2f' % (x, y, x/y))
+                if y != 0:
+                    print('%.2f / %.2f = %.2f' % (x, y, x / y))
+                else:
+                    print("Деление на ноль!")
+
 
 if __name__ == "__main__":
     main()
