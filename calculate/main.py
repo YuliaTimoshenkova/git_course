@@ -27,21 +27,13 @@ def main():
             x = float(input("x = "))
             # Присваиваем значение переменной y
             y = float(input("y = "))
-            # Если action равен + то
             if action == '+':
-                # Выводим сумму x и y
                 print('%.2f + %.2f = %.2f' % (x, y, x+y))
-            # Если action равен - то
             elif action == '-':
-                # Выводим разность x и y
                 print('%.2f - %.2f = %.2f' % (x, y, x-y))
-            # Если action равен * то
             elif action == '*':
-                # Выводим результат умножения x на y
                 print('%.2f * %.2f = %.2f' % (x, y, x*y))
-            # Если action равен / то
             elif action == '/':
-                # Если y не равен нулю то
                 print('%.2f / %.2f = %.2f' % (x, y, x/y))
 
 if __name__ == "__main__":
