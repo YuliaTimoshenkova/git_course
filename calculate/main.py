@@ -39,10 +39,7 @@ def main():
             elif action == '*':
                 # Выводим результат умножения x на y
                 print('%.2f * %.2f = %.2f' % (x, y, x*y))
-            # Если action равен / то
-            elif action == '/':
-                # Если y не равен нулю то
-                print('%.2f / %.2f = %.2f' % (x, y, x/y))
+
 
 if __name__ == "__main__":
     main()
