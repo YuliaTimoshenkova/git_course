@@ -12,6 +12,7 @@ def main():
               "Вычесть: -\n"
               "Умножить: *\n"
               "Поделить: /\n"
+              "Факторизовать: @\n"
               "Выйти: q\n")
         # Переменная для хранения действия
         action = input("Действие: ")
@@ -48,6 +49,17 @@ def main():
                 else: # Иначе
                     # Выводим сообщение, что на ноль делить нельзя
                     print("Деление на ноль!")
+        if action == '@':
+            x = int(input('Введите натуральный x = '))
+            factors = []
+            while x > 1:
+                for i in range(2, x + 1):
+                    if x % i == 0:
+                        x = round(x / i)
+                        factors.append(i)
+                        break
+            for factor in factors:
+                print(factor)
 
 if __name__ == "__main__":
     main()
