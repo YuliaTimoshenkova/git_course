@@ -42,7 +42,10 @@ def main():
             # Если action равен / то
             elif action == '/':
                 # Если y не равен нулю то
+                if y !=0:
                 print('%.2f / %.2f = %.2f' % (x, y, x/y))
+                else:
+                print("Деление на ноль!")
 
 if __name__ == "__main__":
     main()
