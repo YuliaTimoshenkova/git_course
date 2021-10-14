@@ -23,9 +23,9 @@ def main():
             break
         # Если action равен +, -, *, /, то
         if action in ('+', '-', '*', '/'):
-            
+            # Присваиваем значение переменной x
             x = float(input("x = "))
-            
+            # Присваиваем значение переменной y
             y = float(input("y = "))
             # Если action равен + то
             if action == '+':
@@ -37,7 +37,7 @@ def main():
                 print('%.2f - %.2f = %.2f' % (x, y, x-y))
             # Если action равен * то
             elif action == '*':
-              
+                # Выводим результат умножения x на y
                 print('%.2f * %.2f = %.2f' % (x, y, x*y))
 
 if __name__ == "__main__":
