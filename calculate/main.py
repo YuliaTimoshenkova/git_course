@@ -43,6 +43,5 @@ def main():
             elif action == '/':
                 # Если y не равен нулю то
                 print('%.2f / %.2f = %.2f' % (x, y, x/y))
-
 if __name__ == "__main__":
     main()
