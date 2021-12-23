@@ -20,9 +20,7 @@ def main():
         if action in ('+', '-', '*', '/'):
             x = float(input("x = "))
             y = float(input("y = "))
-            # Если action равен + то
             if action == '+':
-                # Выводим сумму x и y
                 print('%.2f + %.2f = %.2f' % (x, y, x+y))
             elif action == '-':
                 print('%.2f - %.2f = %.2f' % (x, y, x-y))
