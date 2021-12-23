@@ -13,7 +13,6 @@ def main():
               "Поделить: /\n"
               "Выйти: q\n")
         action = input("Действие: ")
-        # Если action равен q то
         if action == "q":
             print("Выход из программы")
             break
